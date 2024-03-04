@@ -1,0 +1,45 @@
+<p>swagger works!</p>
+<form (ngSubmit)="onSubmit()">
+  <label>Vision Mission:</label>
+  <textarea [(ngModel)]="collegeData.visionMission" name="visionMission"></textarea>
+
+  <label>Broad objectives:</label>
+  <textarea [(ngModel)]="collegeData.broadObjectives" name="broadObjectives"></textarea>
+
+  <label>Organizational Structure for Operation and Management:</label>
+  <textarea [(ngModel)]="collegeData.organizationalStructure" name="organizationalStructure"></textarea>
+
+  <label>Organogram (PDF):</label>
+  <input type="file" (change)="onFileSelected($event)" accept="application/pdf">
+
+  <label>Role and Responsibilities of Key Positions:</label>
+  <textarea [(ngModel)]="collegeData.roleAndResponsibilities" name="roleAndResponsibilities"></textarea>
+
+  <label>Board of Governance of University to which college will be affiliated:</label>
+  <textarea [(ngModel)]="collegeData.boardOfGovernance" name="boardOfGovernance"></textarea>
+
+  <label>Project Monitoring Unit (PMU) details:</label>
+  <textarea [(ngModel)]="collegeData.projectMonitoringUnit" name="projectMonitoringUnit"></textarea>
+
+  <label>Existing Land Availability (in acres):</label>
+  <input type="number" [(ngModel)]="collegeData.landAvailability" name="landAvailability">
+
+  <label>Land ownership certificate (PDF):</label>
+  <input type="file" (change)="onFileSelected($event)" accept="application/pdf">
+
+  <label>Location of Land (PDF):</label>
+  <input type="file" (change)="onFileSelected($event)" accept="application/pdf">
+
+  <label>Latitude:</label>
+  <input type="number" [(ngModel)]="collegeData.latitude" name="latitude">
+
+  <label>Longitude:</label>
+  <input type="number" [(ngModel)]="collegeData.longitude" name="longitude">
+
+  <label>Certificate of Location (PDF):</label>
+  <input type="file" (change)="onFileSelected($event)" accept="application/pdf">
+
+  <label>Map of the land (PDF):</label>
+  <input type="file" (change)="onFileSelected($event)" accept="application/pdf">
+  <button type="submit">Save</button>
+</form>
